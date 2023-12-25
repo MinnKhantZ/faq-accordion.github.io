@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 body {
-    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-image: url("/assets/images/background-pattern-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: hsl(275, 100%, 97%);
@@ -46,4 +46,16 @@ span {
 a {
     text-decoration: none;
     color: hsl(293, 98%, 35%);
+}
+@media (max-width: 375px) {
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background-image: url('/assets/images/background-pattern-mobile.svg');
+    }
+    .box {
+        width: 90%;
+        padding: 10px 26px;
+    }
 }
