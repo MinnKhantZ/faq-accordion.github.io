@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 body {
-    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-image: url("./assets/images/background-pattern-desktop.svg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: hsl(275, 100%, 97%);
 }
 .box {
-    width: 500px;
+    width: 440px;
     background-color: white;
-    padding: 40px;
-    margin: 0 auto;
-    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 120px auto 40px auto;
+    border-radius: 10px;
 }
 p {
     font-size: 14px;
     font-family: 'Work Sans', sans-serif;
+    display: none;
     font-weight: 400;
 }
 h4 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
+    font-size: 15px;
 }
 h4 > img {
     float: right ;
@@ -39,5 +41,9 @@ h1 > img {
 }
 span {
     display: block;
-    margin: 16px;
+    margin-bottom: 16px;
+}
+a {
+    text-decoration: none;
+    color: hsl(293, 98%, 35%);
 }

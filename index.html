@@ -13,48 +13,52 @@
   </head>
   <body>
     <div class="box">
-      <h1><img src="/assets/images/icon-star.svg" class="star" />FAQS</h1>
+      <h1><img src="/assets/images/icon-star.svg" id="star" />FAQS</h1>
       <h4>
         What is Frontend Mentor, and how will it help me?<img
           src="/assets/images/icon-plus.svg"
-          class="button"
+          id="button1"
+          onclick="show(1)"
         />
       </h4>
-      <p class="text">
+      <p id="text1">
         Frontend Mentor offers realistic coding challenges to help developers
         improve their frontend coding skills with projects in HTML, CSS, and
         JavaScript. It's suitable for all levels and ideal for portfolio
         building.
-      </p>
+      </p><hr>
       <h4>
         Is Frontend Mentor free?<img
           src="/assets/images/icon-plus.svg"
-          class="button"
+          id="button2"
+          onclick="show(2)"
         />
       </h4>
-      <p class="text">
+      <p id="text2">
         Yes, Frontend Mentor offers both free and premium coding challenges,
         with the free option providing access to a range of projects suitable
         for all skill levels.
-      </p>
+      </p><hr>
       <h4>
         Can I use Frontend Mentor projects in my portfolio?<img
           src="/assets/images/icon-plus.svg"
-          class="button"
+          id="button3"
+          onclick="show(3)"
         />
       </h4>
-      <p class="text">
+      <p id="text3">
         Yes, you can use projects completed on Frontend Mentor in your
         portfolio. It's an excellent way to showcase your skills to potential
         employers!
-      </p>
+      </p><hr>
       <h4>
-        How can I get help if I'm stuck on a Frontend Mentor challenge?<img
+        How can I get help if I'm stuck on a challenge?<img
           src="/assets/images/icon-plus.svg"
-          class="button"
+          id="button4"
+          onclick="show(4)"
         />
       </h4>
-      <p class="text">
+      <p id="text4">
         The best place to get help is inside Frontend Mentor's Discord
         community. There's a help channel where you can ask questions and seek
         support from other community members.
@@ -68,14 +72,23 @@
           >Frontend Mentor</a
         >.</span
       >
-      <span>Coded by <a href="#">Your Name Here</a>.</span>
+      <span>Coded by <a href="https://github.com/MinnKhantZ" target="_blank">Min Khant Zaw</a>.</span>
     </div>
     <script>
-      const button = document.getElementsByClassName("button");
-      const para = document.getElementsByClassName("para");
-      button[0].addEventListener("click", function () {
-        para[0].innerHTML = "Hello";
-      });
+      function show(i) {
+        const text = document.getElementById('text'+i);
+        const btn = document.getElementById('button'+i);
+        const isHidden = window.getComputedStyle(text).display === 'none';
+        if (isHidden) {
+          text.style.display = 'inline';
+          btn.src = '/assets/images/icon-minus.svg';
+        }
+        if (!isHidden) {
+          text.style.display = 'none';
+          btn.src = '/assets/images/icon-plus.svg';
+        }
+
+      }
     </script>
   </body>
 </html>
