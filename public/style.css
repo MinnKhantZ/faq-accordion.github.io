@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+body {
+    background-image: url("/assets/images/background-pattern-desktop.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+}
+.box {
+    width: 500px;
+    background-color: white;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+p {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+h4 > img {
+    float: right ;
+    vertical-align: middle;
+}
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+h1 > img {
+    float: left;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.attribution {
+    text-align: center;
+}
+span {
+    display: block;
+    margin: 16px;
+}
