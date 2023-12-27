@@ -22,6 +22,10 @@ h4 {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
+}
+h4:hover {
+  color: hsl(292, 96%, 33%);
 }
 h4 > img {
   float: right;
@@ -47,7 +51,7 @@ a {
   text-decoration: none;
   color: hsl(293, 98%, 35%);
 }
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   * {
     box-sizing: border-box;
   }
